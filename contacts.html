@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+<body>
+<div id="mainPage">
+  <nav class="navbar">
+    <div class="navbar-center">
+      <a href="#">CONTACT MANAGER</a>
+      <a href="" id="HomePage">Home</a>
+      <a href="#" id="createPage">Create</a>
+    </div>
 
+    <div class="navbar-right">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+  <div class="contacts-section" id="table">
+    <h2>Contacts</h2>
+    <table class="contacts-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>City</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- You can add contact rows here later -->
+      </tbody>
+    </table>
+  </div>
+  <div class="form-section" id="formSection">
+    <h2>Add Contact</h2>
+    <form class="contact-form">
+      <input type="hidden" id="contactId" />
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+  
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
+<script src="first.js"></script>
+</html>
